@@ -103,7 +103,7 @@ h2::after {
     left: 0;
     right: 0;
     color: #0D0D0D;
-    -webkit-text-stroke-width: .01rem;
+    -webkit-text-stroke-width: .05rem;
     -webkit-text-stroke-color: white;
     transition: color 200ms ease-in-out, transform 200ms ease-in-out;
     user-select: none;
