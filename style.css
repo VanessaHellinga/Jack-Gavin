@@ -103,6 +103,8 @@ h2::after {
     left: 0;
     right: 0;
     color: #0D0D0D;
+    -webkit-text-stroke-width: .01rem;
+    -webkit-text-stroke-color: white;
     transition: color 200ms ease-in-out, transform 200ms ease-in-out;
     user-select: none;
 }
@@ -111,6 +113,7 @@ h2::after {
 .list-item:hover > .split-text::after {
     color: #CCF244;
     transform: skewX(-20deg);
+    -webkit-text-stroke-width: 0;
 }
 
 .list-item > .split-text::after {
