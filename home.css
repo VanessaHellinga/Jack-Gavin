@@ -131,7 +131,7 @@ path:nth-child(6) {
 .slideshow-section {
   margin-top: 10rem;
   width: 100vw;
-  height: 40vw;
+  height: 100vh;
   overflow: hidden;
   animation: rotateHue infinite 20s linear;
   animation-delay: 0.625s;
@@ -168,13 +168,13 @@ path:nth-child(6) {
 }
 .shutters {
   position: absolute;
-  height: 150vmax;
-  width: 150vmax;
-  left: calc(50% - 75vmax);
-  top: calc(50% - 75vmax);
+  height: 100vh;
+  width: 100%;
+  /* left: calc(50% - 75vmax); */
+  /* top: calc(50% - 75vmax); */
   pointer-events: none;
   z-index: 10;
-  animation: rotateFrame 10s linear infinite;
+  /* animation: rotateFrame 10s linear infinite; */
 }
 @keyframes rotateFrame {
   0% {
@@ -187,10 +187,10 @@ path:nth-child(6) {
 .shutters:before, .shutters:after {
   content: '';
   position: absolute;
-  height: 70%;
-  width: 70%;
+  height: 50%;
+  width: 100%;
   left: 50%;
-  transform: translate3d(-50%, 0, 0);
+  /* transform: translate3d(-50%, 0, 0); */
   background-color: #CCF244;
   pointer-events: auto;
 }
@@ -204,11 +204,11 @@ path:nth-child(6) {
     animation-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
  }
   40% {
-    transform: translate3d(-50%, -65vmax, 0);
+    transform: translate3d(-50%, -30rem, 0);
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  }
   70% {
-    transform: translate3d(-50%, -65vmax, 0);
+    transform: translate3d(-50%, -30rem, 0);
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  }
   100% {
@@ -226,11 +226,11 @@ path:nth-child(6) {
     animation-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
  }
   40% {
-    transform: translate3d(-50%, 65vmax, 0);
+    transform: translate3d(-50%, 30rem, 0);
     animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  }
   70% {
-    transform: translate3d(-50%, 65vmax, 0);
+    transform: translate3d(-50%, 30rem, 0);
     animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  }
   100% {
