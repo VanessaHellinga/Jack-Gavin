@@ -1,28 +1,30 @@
 * {
   margin: 0;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  padding: 0;
+  scroll-padding: 0;
+}
+
+html { 
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: black;
-  
 }
+
 
 
  /* HEADER */
 .mini-nav-container {
-  display: block;
-  height: 3vw;
+  background-color: black;
+  height: 2vw;
 }
 /* HAMBURGER */
 .hamburger-menu-container {
- display: flex;
- justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 svg {
@@ -80,7 +82,7 @@ path:nth-child(6) {
 /* LINKS LIST */
 .top-nav {
   position: absolute;
-  top: 0vh;
+  /* top: 0vw; */
   width: 100%;
   transform: translateX(200%);
   z-index: 1;
@@ -95,14 +97,14 @@ path:nth-child(6) {
   list-style-type: none;
   background-color: rgba(0, 0, 0, .9);
   width: 100%; 
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 .mini-nav-link {
   color: #FFFFFF;
   text-decoration: none;
   width: 100%;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-size: 1.5rem;
 }
 .mini-nav-link:hover {
@@ -121,17 +123,15 @@ path:nth-child(6) {
 .logo {
   color: #FFF;
   font-size: 4rem;
+  width: 50%;
   font-family: 'Grape Nuts', cursive;
-  text-align: center;
-  padding-bottom: 1rem;
 }
-
-
 
 /* SLIDESHOW */
 .slideshow-section {
+  margin-top: 10rem;
   width: 100vw;
-  height: 100vh;
+  height: 40vw;
   overflow: hidden;
   animation: rotateHue infinite 20s linear;
   animation-delay: 0.625s;
@@ -173,7 +173,7 @@ path:nth-child(6) {
   left: calc(50% - 75vmax);
   top: calc(50% - 75vmax);
   pointer-events: none;
-  z-index: 2;
+  z-index: 10;
   animation: rotateFrame 10s linear infinite;
 }
 @keyframes rotateFrame {
@@ -181,14 +181,14 @@ path:nth-child(6) {
     transform: rotate(0deg);
  }
   100% {
-    transform: rotate(180deg); 
+    transform: rotate(90deg); 
  }
 }
 .shutters:before, .shutters:after {
   content: '';
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   background-color: #CCF244;
@@ -239,15 +239,16 @@ path:nth-child(6) {
  }
 }
 .slideshow-wrapper {
-  position: absolute;
-  height: 100%;
+  /* position: absolute; */
+  /* height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #CCF244;
+  background-color: #CCF244; */
 }
 .slide {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -295,11 +296,11 @@ path:nth-child(6) {
   background-image: url(img/Jack\ Studio\ 1.jpg);
 }
 .slideBg {
-  position: relative;
+  /* position: relative; */
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   background-size: cover;
   background-position: center;
   background-blend-mode: hard-light;
@@ -325,30 +326,34 @@ path:nth-child(6) {
   100% {
     transform: rotate(45deg) scale(1.9);
  }
-}
+} 
+
 
 /* BIOGRAPHY */
-.bio {
+.bio-container{
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2.5rem;
-  z-index: 100;
-  margin-top: 2%;
+  padding: 10rem 2.5rem;
+  /* z-index: 100; */
+  height: fit-content;
+  overflow: hidden;
 }
 
 .bio-name{
   color: white;
   font-family: 'Rubik Puddles', cursive;
   word-spacing: 1rem;
-
+  font-size: 3rem;
 }
 
 .short-bio {
   color: white;
   padding: 2rem .5rem;
   text-indent: .5rem;
+  font-size: 2rem;
+  letter-spacing: .1rem;
 }
 
 .bio-btn {
@@ -362,6 +367,7 @@ path:nth-child(6) {
   border: 1px solid white;
   border-radius: .5rem;
   width: 100%;
+  font-size: 2rem;
 }
 
 .bio-btn:hover {
@@ -389,7 +395,9 @@ path:nth-child(6) {
 .media-container {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 } 
+
 .player {
   transform: translateY(.01%);
   display: flex;
@@ -473,7 +481,7 @@ canvas {
 
 .player .song .name {
   font-size: 1.2rem;
-}
+} 
 
 /* .player .soundControl {
   cursor: pointer;
@@ -498,14 +506,14 @@ canvas {
 
 /* FOOTER */
 .footer {
-  /* grid-area: footer; */
+  grid-area: footer;
   color: white;
-  /* height: 10vw; */
-  z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: .1rem solid white;
+  height: fit-content;
+  overflow-y: hidden;
 }
 
 .footer-logo {
@@ -568,48 +576,43 @@ canvas {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 872px) {
   .logo {
     font-size: 3rem;
   }
   .footer-logo {
     font-size: 2.5rem;
   }
-  .footer-icons {
-    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 655px) {
+  .logo {
+    font-size: 2.5rem;
   }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 545px) {
   .logo {
     font-size: 2rem;
   }
-  .player .song {
-    top: 25%;
+  svg {
+    width: 6rem;
+    height: 3rem;
   }
-  .player .song .artist {
-    font-size: 1.2rem;
-  }
-  .player .song .name {
-    font-size: 1.1rem;
-  }
-  .player .time {
-    font-size: .8rem;
-    bottom: 30%;
-  }
-  .footer-logo {
+  .bio-name{
     font-size: 2rem;
   }
-}
-
-@media screen and (max-width: 427px) {
-  svg{
-    width: 6rem;
-    height: 3.5rem;
+  
+  .short-bio {
+    font-size: 1.5rem;
   }
-  .mini-nav-link {
-    line-height: 2.2rem;
-    font-size: 1rem;
+  
+  .bio-btn {
+    font-size: 1.7rem;
+  }
+  
+  .player .song {
+    top: 25%;
   }
   .player .song .artist {
     font-size: 1rem;
@@ -618,57 +621,37 @@ canvas {
     font-size: .9rem;
   }
   .player .playarea .play {
-    font-size: .7rem;
     padding: 1.5rem;
   }
   .player .playarea .pause {
-    font-size: 1rem;
     padding: 1.5rem;
   }
-  .player .time {
-    font-size: .7rem;
-  }
-  .copyright {
-    font-size: .5rem;
+  .footer-logo {
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 375px) {
-  svg{
+@media screen and (max-width: 435px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+  svg {
     width: 4rem;
-    height: 3rem;
-  }
-  .short-bio {
-    padding: 2rem 0rem;
-  }
-  .top-icon-link {
-    font-size: 1rem;
-  }
-  .player .song .artist {
-    font-size: .8rem;
-  }
-  .player .song .name {
-    font-size: .7rem;
-  }
-  .player .time {
-    font-size: .5rem;
   }
   .footer-logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .footer-icons {
-    font-size: 1.2rem;
+    /* align-self: center; */
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 333px) {
-  svg{
-    width: 3rem;
-  }
-  .mini-nav-list {
-    padding-top: 0;
-  }
+@media screen and (max-width: 345px) {
   .logo {
-    font-size: 1.8rem;
+    width: 60%;
   }
-}
+  .footer {
+    margin-top: 5rem;
+  }
+} 
