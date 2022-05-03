@@ -75,7 +75,7 @@ var Framer = {
     drawEdging: function () {
         this.context.save();
         this.context.beginPath();
-        this.context.strokeStyle = '#FFF';
+        this.context.strokeStyle = '#CCF244';
         this.context.lineWidth = 1;
 
         var offset = Tracker.lineWidth / 2;
@@ -528,8 +528,8 @@ var Player = {
     tracks: [
         {
             artist: "Artist",
-            song: "Song Title",
-            url: "Hardy - AShamaluevMusic.mp3"
+            song: "Song",
+            url: "/mp3s/song1.mp3"
         }
     ],
 
