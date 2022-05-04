@@ -529,7 +529,7 @@ var Player = {
         {
             artist: "Artist",
             song: "Song",
-            url: "/mp3s/song1.mp3"
+            url: "mp3s/song1.mp3"
         }
     ],
 
