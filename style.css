@@ -9,8 +9,6 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: black;
- 
-  
 }
 
 
@@ -410,12 +408,12 @@ path:nth-child(6) {
   color: #FFF;
   font-size: 3rem;
   margin: 5rem 0;
-  font-family: 'Rubik Puddles', cursive;
+  font-family: 'Kalam', cursive;
   letter-spacing: .5rem;
 }
 
 .sub-heading span {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 3rem;
   letter-spacing: .8rem;
 }
@@ -544,7 +542,11 @@ canvas {
   margin: 2rem;
   text-indent: .5rem;
   font-size: 3rem;
+  line-height: 4rem;
   letter-spacing: .1rem;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 200;
+  padding-bottom: 4rem;
 }
 
 .short-bio span {

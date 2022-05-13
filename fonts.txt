@@ -1,0 +1,7 @@
+font-family: 'Amatic SC', cursive;
+font-family: 'Grape Nuts', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Flex', sans-serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Rubik Puddles', cursive;
