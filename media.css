@@ -211,6 +211,23 @@ position: relative;
     font-family: 'Grape Nuts', cursive;
     text-align: center;
 }
+.logo-top {
+    width: 35%;
+}
+
+/* MAIN */
+.header {
+    text-align: center;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  
+  margin-top: 15rem;
+}
+
 
 
 
@@ -259,6 +276,67 @@ position: relative;
   color: #CCF244;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Begin Media Queries*/
+@media screen and (max-width: 950px) {
+    .list-item {
+      font-size: 2rem;
+    }
+    .invisible-link {
+      font-size: 1.5rem;
+    }
+    .logo-container {
+      margin-top: -3%;
+    }
+    .logo-img {
+      width: 13%;
+    }
+  }
+  @media screen and (max-width: 850px) {
+ 
+  }
+  @media screen and (max-width: 500px) {
+    /* LOGO */
+    .logo {
+      font-size: 3rem;
+    }
+      /* LOGO */
+      .logo-top {
+        width: 45%;
+      }
+    #contact {
+      margin-top: 8rem;
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    .logo-top {
+      width: 55%;
+    }
+  }
+  
+  @media screen and (max-width: 310px) {
+    .logo-top {
+      width: 65%;
+    }
+  }
+ 
 
 
 

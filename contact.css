@@ -211,6 +211,9 @@ position: relative;
   font-family: 'Grape Nuts', cursive;
   text-align: center;
 }
+.logo-top {
+  width: 35%;
+}
 
 
 
@@ -228,6 +231,8 @@ position: relative;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: .6rem;
+  
+  margin-top: 15rem;
 }
   
 .contact-wrapper {
@@ -489,10 +494,11 @@ textarea {
     margin-top: 5rem;
   }
   .contact-wrapper {
-    
+    margin: 0;
+    padding-right: 2rem;
   }
   .form-horizontal {
-    width: 100%;
+    width: 80%;
   }
   .form-control, 
   textarea {
@@ -515,20 +521,26 @@ textarea {
   .logo {
     font-size: 3rem;
   }
+    /* LOGO */
+    .logo-top {
+      width: 45%;
+    }
   #contact {
     margin-top: 8rem;
   }
 }
-  
 
+@media screen and (max-width: 410px) {
+  .logo-top {
+    width: 55%;
+  }
+}
 
-
-
-
-
-  
-  
-  
+@media screen and (max-width: 310px) {
+  .logo-top {
+    width: 65%;
+  }
+}
   
 
 

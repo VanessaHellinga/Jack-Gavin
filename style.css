@@ -217,10 +217,12 @@ path:nth-child(6) {
   width: 35%;
 }
 
+
+
 /* SLIDESHOW */
 .slideshow-section {
   position: relative;
-  margin-top: 20rem;
+  margin-top: 35rem;
   width: 100vw;
   height: 90vw;
   overflow: hidden;
@@ -689,6 +691,10 @@ canvas {
   }
   .logo-img {
     width: 13%;
+  }
+  /* SLIDESHOW */
+  .slideshow-section {
+    margin-top: 25rem;
   }
   /* BIO */
   .bio-container {
