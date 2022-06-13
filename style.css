@@ -212,10 +212,15 @@ path:nth-child(6) {
   text-align: center;
 }
 
+
+.logo-top {
+  width: 35%;
+}
+
 /* SLIDESHOW */
 .slideshow-section {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 20rem;
   width: 100vw;
   height: 90vw;
   overflow: hidden;
@@ -705,6 +710,9 @@ canvas {
   .logo {
     font-size: 3rem;
   }
+  .logo-top {
+    width: 45%;
+  }
   /* AUDIO */
   canvas {
     width: 100%;
@@ -745,6 +753,9 @@ canvas {
 }
 
 @media screen and (max-width: 410px) {
+  .logo-top {
+    width: 55%;
+  }
   .sub-heading {
     font-size: 2.5rem;
   }
@@ -760,6 +771,9 @@ canvas {
 }
 
 @media screen and (max-width: 310px) {
+  .logo-top {
+    width: 65%;
+  }
   .sub-heading {
     font-size: 2rem;
   }
